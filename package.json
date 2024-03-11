@@ -1,0 +1,25 @@
+{
+  "name": "aetolia-common",
+  "version": "0.0.1",
+  "description": "Common Data for Aetolia",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bazias/aetolia-common.git"
+  },
+  "keywords": [
+    "aetolia",
+    "mud",
+    "yaml",
+    "json"
+  ],
+  "author": "Bazias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bazias/aetolia-common/issues"
+  },
+  "homepage": "https://github.com/Bazias/aetolia-common#readme",
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
+}
