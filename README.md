@@ -6,6 +6,12 @@ Common Data for Aetolia
 
 There is common data in Aetolia that all systems of which all systems make use. This project is an attempt to provide a centralized copy of this datasuch that anyone can import the data into their systems and reduce the burden in maitenance within the community.
 
+## Contributing
+
+Contributions are welcome! Please submit PRs, and I'm happy to work with folks to make adjustments to promote adoption.
+
+Currently, everything is formatted with `prettier` and CI will fail if unformated code is submitted. To run prettier yourself, you'll need to install [node](https://nodejs.org/en) and run `npm install` to install the dependencies. `npx prettier . --write` will format everything for you! (Bewarned, this does edit your changes.)
+
 ## Schema
 
 Below details the schema of each category of data.
