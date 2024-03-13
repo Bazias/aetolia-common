@@ -9,8 +9,8 @@ let afflictions;
 let cures;
 
 try {
-  afflictions = yaml.load(fs.readFileSync("afflictions.yaml", "utf8"));
-  cures = yaml.load(fs.readFileSync("cures.yaml", "utf8"));
+  afflictions = yaml.load(fs.readFileSync("./src/afflictions.yaml", "utf8"));
+  cures = yaml.load(fs.readFileSync("./src/cures.yaml", "utf8"));
 } catch (e) {
   console.log(e);
 }
