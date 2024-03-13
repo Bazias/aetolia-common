@@ -1,226 +1,291 @@
 pill:
   antipsychotic:
-    - sadness
-    - confusion
-    - dementia
-    - hallucinations
-    - paranoia
-    - hatred
-    - hypersomnia
-    - addiction
-    - blood_curse
-    - blighted
+    - order:
+        - sadness
+        - confusion
+        - dementia
+        - hallucinations
+        - paranoia
+        - hatred
+        - hypersomnia
+        - addiction
+        - blood_curse
+        - blighted
   euphoriant:
-    - self-pity
-    - stupidity
-    - dizziness
-    - faintness
-    - shyness
-    - epilepsy
-    - impatience
-    - dissonance
-    - infested
-    - insomnia
+    - order:
+        - self-pity
+        - stupidity
+        - dizziness
+        - faintness
+        - shyness
+        - epilepsy
+        - impatience
+        - dissonance
+        - infested
+        - insomnia
   decongestant:
-    - baldness
-    - clumsiness
-    - hypochondria
-    - weariness
-    - asthma
-    - sensitivity
-    - ringing_ears
-    - impairment
-    - blood_poison
+    - order:
+        - baldness
+        - clumsiness
+        - hypochondria
+        - weariness
+        - asthma
+        - sensitivity
+        - ringing_ears
+        - impairment
+        - blood_poison
   depressant:
-    - commitment_fear
-    - merciful
-    - recklessness
-    - egocentric
-    - masochism
-    - agoraphobia
-    - loneliness
-    - berserking
-    - vertigo
-    - claustrophobia
-    - nyctophobia
+    - order:
+        - commitment_fear
+        - merciful
+        - recklessness
+        - egocentric
+        - masochism
+        - agoraphobia
+        - loneliness
+        - berserking
+        - vertigo
+        - claustrophobia
+        - nyctophobia
   coagulation:
-    - body_odor
-    - lethargy
-    - allergies
-    - mental_disruption
-    - physical_disruption
-    - vomiting
-    - exhausted
-    - thin_blood
-    - rend
-    - haemophilia
+    - order:
+        - body_odor
+        - lethargy
+        - allergies
+        - mental_disruption
+        - physical_disruption
+        - vomiting
+        - exhausted
+        - thin_blood
+        - rend
+        - haemophilia
   steroid:
-    - hubris
-    - pacifism
-    - peace
-    - agony # is promoted to accursed
-    - accursed
-    - limp_veins
-    - lovers_effect
-    - laxity
-    - superstition
-    - generosity
-    - justice
-    - magnanimity
+    - order:
+        - hubris
+        - pacifism
+        - peace
+        - agony # is promoted to accursed
+        - accursed
+        - limp_veins
+        - lovers_effect
+        - laxity
+        - superstition
+        - generosity
+        - justice
+        - magnanimity
   eucrasia:
-    - worrywart
-    - misery
-    - hollow
-    - narcolepsy
-    - perplexed
-    - self_loathing
+    - order:
+        - worrywart
+        - misery
+        - hollow
+        - narcolepsy
+        - perplexed
+        - self_loathing
   opiate:
-    - paresis
-    - paralysis
-    - mirroring
-    - crippled_body
-    - crippled
-    - blisters
-    - slickness
-    - heartflutter
-    - slough
+    - order:
+        - paresis
+        - paralysis
+        - mirroring
+        - crippled_body
+        - crippled
+        - blisters
+        - slickness
+        - heartflutter
+        - slough
   anabiotic:
-    - plodding
-    - idiocy
+    - heals:
+        health: true
+        mana: true
+      order:
+        - plodding
+        - idiocy
   panacea:
-    - stormtouched
-    - patterns
-    - rot_body # it's all rot, but they're levels
-    - rot_wither
-    - rot_spirit
-    - rot_heat
-    - rot_benign
+    - order:
+        - stormtouched
+        - patterns
+        - rot_body # it's all rot, but they're levels
+        - rot_wither
+        - rot_spirit
+        - rot_heat
+        - rot_benign
+  thanatonin:
+    - defence: deathsight
+  stimulant:
+    - defence: energetic
+  kawhe:
+    - defence: insomnia
+  ototoxin:
+    - defence: deafness
+  amaurosis:
+    - defence: blindness
+  acuity:
+    - defence: thirdeye
+  somnium:
+    - defence: daydream
+  paste:
+    - defence: fangbarrier
+  waterbreathing:
+    - defence: waterbreathing
 pipe:
   willow:
-    - aeon
-    - hellsight
-    - deadening
+    - order:
+        - aeon
+        - hellsight
+        - deadening
   yarrow:
-    - slickness
-    - withering
-    - disfigurement
-    - migraine
-    - squelched
+    - order:
+        - slickness
+        - withering
+        - disfigurement
+        - migraine
+        - squelched
   reishi:
-    - besilence
+    - defence: rebounding
+      order:
+        - besilence
 elixir:
   health:
+    - heals:
+        health: true
   mana:
+    - heals:
+        mana: true
   infusion:
   harmony:
+    - defence: harmony
   levitation:
+    - defence: levitation
   immunity:
-    - voyria
+    - order:
+        - voyria
   arcane:
+    - defence: arcane
   speed:
+    - defence: speed
   vigor:
+    - defence: vigor
 poultice:
   epidermal:
-    HEAD:
-      - indifference
-      - stuttering
-      - blurry_vision
-      - burnt_eyes
-      - blindness
-      - gloom
-      - deafness
-    TORSO:
-      - anorexia
-      - gorged
-      - etherflux
-      - effused_blood
+    - location: head
+      order:
+        - indifference
+        - stuttering
+        - blurry_vision
+        - burnt_eyes
+        - blindness
+        - gloom
+        - deafness
+    - location: torso
+      order:
+        - anorexia
+        - gorged
+        - etherflux
+        - effused_blood
   mending:
-    HEAD:
-      - head_bruised_critical
-      - destroyed_throat
-      - crippled_throat
-      - head_bruised_moderate
-      - head_bruised
-    TORSO:
-      - torso_bruised_critical
-      - lightwound
-      - ablaze
-      - cracked_ribs
-      - torso_bruised_moderate
-      - torso_bruised
-    LEFT_ARM:
-      - left_arm_bruised_critical
-      - left_arm_crippled
-      - left_arm_bruised_moderate
-      - left_arm_bruised
-      - left_arm_dislocated
-    RIGHT_ARM:
-      - right_arm_bruised_critical
-      - right_arm_crippled
-      - right_arm_bruised_moderate
-      - right_arm_bruised
-      - right_arm_dislocated
-    LEFT_LEG:
-      - left_leg_bruised_critical
-      - left_leg_crippled
-      - left_leg_bruised_moderate
-      - left_leg_bruised
-      - left_leg_dislocated
-    RIGHT_LEG:
-      - right_leg_bruised_critical
-      - right_leg_crippled
-      - right_leg_bruised_moderate
-      - right_leg_bruised
-      - right_leg_dislocated
+    - location: head
+      order:
+        - head_bruised_critical
+        - destroyed_throat
+        - crippled_throat
+        - head_bruised_moderate
+        - head_bruised
+    - location: torso
+      order:
+        - torso_bruised_critical
+        - lightwound
+        - ablaze
+        - cracked_ribs
+        - torso_bruised_moderate
+        - torso_bruised
+    - location: left_arm
+      order:
+        - left_arm_bruised_critical
+        - left_arm_crippled
+        - left_arm_bruised_moderate
+        - left_arm_bruised
+        - left_arm_dislocated
+    - location: right_arm
+      order:
+        - right_arm_bruised_critical
+        - right_arm_crippled
+        - right_arm_bruised_moderate
+        - right_arm_bruised
+        - right_arm_dislocated
+    - location: left_leg
+      order:
+        - left_leg_bruised_critical
+        - left_leg_crippled
+        - left_leg_bruised_moderate
+        - left_leg_bruised
+        - left_leg_dislocated
+    - location: right_leg
+      order:
+        - right_leg_bruised_critical
+        - right_leg_crippled
+        - right_leg_bruised_moderate
+        - right_leg_bruised
+        - right_leg_dislocated
   soothing:
-    HEAD:
-      - whiplash
-    TORSO:
-      - backstrain
-      - muscle_spasms
-      - stiffness
-    ARMS:
-      - sore_wrist
-      - weak_grip
-    LEGS:
-      - sore_ankle
+    - location: head
+      order:
+        - whiplash
+    - location: torso
+      order:
+        - backstrain
+        - muscle_spasms
+        - stiffness
+    - location: arms
+      order:
+        - sore_wrist
+        - weak_grip
+    - location: legs
+      order:
+        - sore_ankle
   caloric:
-    TORSO:
-      - hypothermia
-      - frozen
-      - frigid
-      - shivering
+    - location: torso
+      order:
+        - hypothermia
+        - frozen
+        - frigid
+        - shivering
   mass:
-    TORSO:
+    - location: torso
+      defence: density
   restoration:
-    HEAD:
-      - mauled_face
-      - head_mangled
-      - head_broken
-      - voidgaze
-      - smashed_throat
-    TORSO:
-      - collapsed_lung
-      - spinal_rip
-      - burnt_skin
-      - torso_mangled
-      - torso_broken
-      - crushed_chest
-      - heatspear
-      - deepwound
-    LEFT_ARM:
-      - left_arm_amputated
-      - left_arm_mangled
-      - left_arm_broken
-    RIGHT_ARM:
-      - right_arm_amputated
-      - right_arm_mangled
-      - right_arm_broken
-    LEFT_LEG:
-      - left_leg_amputated
-      - left_leg_mangled
-      - left_leg_broken
-    RIGHT_LEG:
-      - right_leg_amputated
-      - right_leg_mangled
-      - right_leg_broken
+    - location: head
+      order:
+        - mauled_face
+        - head_mangled
+        - head_broken
+        - voidgaze
+        - smashed_throat
+    - location: torso
+      order:
+        - collapsed_lung
+        - spinal_rip
+        - burnt_skin
+        - torso_mangled
+        - torso_broken
+        - crushed_chest
+        - heatspear
+        - deepwound
+    - location: left_leg
+      order:
+        - left_arm_amputated
+        - left_arm_mangled
+        - left_arm_broken
+    - location: right_arm
+      order:
+        - right_arm_amputated
+        - right_arm_mangled
+        - right_arm_broken
+    - location: left_leg
+      order:
+        - left_leg_amputated
+        - left_leg_mangled
+        - left_leg_broken
+    - location: right_leg
+      order:
+        - right_leg_amputated
+        - right_leg_mangled
+        - right_leg_broken
