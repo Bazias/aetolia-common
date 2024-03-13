@@ -12,7 +12,7 @@ Below details the schema of each category of data.
 
 ### Afflictions
 
-Afflictions should be kept in [`afflictions.yaml`](./afflictions.yaml).
+Afflictions should be kept in [`afflictions.yaml`](./src/afflictions.yaml).
 
 ```yaml
 <name>:
@@ -32,7 +32,7 @@ Afflictions should be kept in [`afflictions.yaml`](./afflictions.yaml).
 
 ### Cures
 
-Cures should be kept in [`cures.yaml`](./cures.yaml).
+Cures should be kept in [`cures.yaml`](./src/cures.yaml).
 
 ```yaml
 <queue>:
@@ -48,7 +48,7 @@ Cures should be kept in [`cures.yaml`](./cures.yaml).
 
 ### Defences
 
-Defences should be kept in [`defences.yaml`](./defences.yaml).
+Defences should be kept in [`defences.yaml`](./src/defences.yaml).
 
 ```yaml
 <defence>:
@@ -71,7 +71,7 @@ Not all defences belong to a skillset (e.g. `rebounding`), but in such cases, as
 
 ### Skills
 
-Skills should be kept in [`skills.yaml`](./skills.yaml).
+Skills should be kept in [`skills.yaml`](./src/skills.yaml).
 
 ```yaml
 <skillset>:
