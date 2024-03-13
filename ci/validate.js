@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// @TODO: validate defences too
+
 const fs = require("fs");
 const yaml = require("js-yaml");
 
@@ -13,35 +15,22 @@ try {
   console.log(e);
 }
 
-const consumables = ["pill", "pipe", "elixir"];
-const appliables = ["poultice"];
-
-const validateAffsInSet = (affs) => {
-  if (affs.length < 1) return;
+const validateCureOrder = (entry) => {
+  const affs = entry.order || [];
   for (aff of affs) {
     if (afflictions.list.indexOf(aff) < 0) {
-      throw new Error("Uknown affliction: " + aff);
+      throw new Error("Unknown affliction: " + aff);
     }
   }
 };
 
-const validateConsumables = () => {
-  for (queue of consumables) {
-    for (const [cure, affs] of Object.entries(cures[queue])) {
-      validateAffsInSet(affs || []);
+const queues = ["pill", "pipe", "elixir", "pipe"];
+
+for (queue of queues) {
+  for (const [cure, entries] of Object.entries(cures[queue])) {
+    if (!entries) continue;
+    for (entry of entries) {
+      validateCureOrder(entry);
     }
   }
-};
-
-const validateAppliables = () => {
-  for (queue of appliables) {
-    for (const [cure, locations] of Object.entries(cures[queue])) {
-      for (const [location, affs] of Object.entries(locations)) {
-        validateAffsInSet(affs || []);
-      }
-    }
-  }
-};
-
-validateConsumables();
-validateAppliables();
+}

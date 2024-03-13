@@ -37,8 +37,13 @@ Cures should be kept in [`cures.yaml`](./cures.yaml).
 ```yaml
 <queue>:
   <cure>:
-    order:
-      - <affliction>
+    - location: <string>
+      heals:
+        health: <bool>
+        mana: <bool>
+      defence: <string>
+      order:
+        - <affliction>
 ```
 
 ### Defences
